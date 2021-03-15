@@ -1,0 +1,37 @@
+[
+	{
+		"file": "C:\\\\Workspace\\\\Unreal\\\\BuildingEscape\\\\Source\\\\BuildingEscape\\\\BuildingEscape.Build.cs",
+		"command": "cl.exe @\"C:\\Workspace\\Unreal\\BuildingEscape\\.vscode\\compileCommands_BuildingEscape\\BuildingEscape.182.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Workspace\\\\Unreal\\\\BuildingEscape\\\\Source\\\\BuildingEscape\\\\BuildingEscape.cpp",
+		"command": "cl.exe @\"C:\\Workspace\\Unreal\\BuildingEscape\\.vscode\\compileCommands_BuildingEscape\\BuildingEscape.182.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Workspace\\\\Unreal\\\\BuildingEscape\\\\Source\\\\BuildingEscape\\\\BuildingEscape.h",
+		"command": "cl.exe @\"C:\\Workspace\\Unreal\\BuildingEscape\\.vscode\\compileCommands_BuildingEscape\\BuildingEscape.182.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Workspace\\\\Unreal\\\\BuildingEscape\\\\Source\\\\BuildingEscape\\\\BuildingEscapeGameModeBase.cpp",
+		"command": "cl.exe @\"C:\\Workspace\\Unreal\\BuildingEscape\\.vscode\\compileCommands_BuildingEscape\\BuildingEscape.182.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Workspace\\\\Unreal\\\\BuildingEscape\\\\Source\\\\BuildingEscape\\\\BuildingEscapeGameModeBase.h",
+		"command": "cl.exe @\"C:\\Workspace\\Unreal\\BuildingEscape\\.vscode\\compileCommands_BuildingEscape\\BuildingEscape.182.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Workspace\\\\Unreal\\\\BuildingEscape\\\\Source\\\\BuildingEscape\\\\WorldComponent.cpp",
+		"command": "cl.exe @\"C:\\Workspace\\Unreal\\BuildingEscape\\.vscode\\compileCommands_BuildingEscape\\BuildingEscape.182.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	},
+	{
+		"file": "C:\\\\Workspace\\\\Unreal\\\\BuildingEscape\\\\Source\\\\BuildingEscape\\\\WorldComponent.h",
+		"command": "cl.exe @\"C:\\Workspace\\Unreal\\BuildingEscape\\.vscode\\compileCommands_BuildingEscape\\BuildingEscape.182.rsp\"",
+		"directory": "C:\\Program Files\\Epic Games\\UE_4.26\\Engine\\Source"
+	}
+]
