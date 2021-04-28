@@ -14,11 +14,10 @@ UOpenDoorComponent::UOpenDoorComponent()
 	// ...
 }
 
-void UOpenDoorComponent::HandleOpenDoor() const
+void UOpenDoorComponent::HandleOpenDoor()
 {
-	const FRotator CurrentRotation = GetOwner()->GetActorRotation();
-	const FRotator OpenDoorRotation	 = FRotator(0.0f, CurrentRotation.Yaw + 90.0f, 0.0f);
-	GetOwner()->SetActorRotation(OpenDoorRotation);
+	CurrentYaw = FMath::Lerp(CurrentYaw, TargetYaw, 0.01f);
+	GetOwner()->SetActorRotation(FRotator(0.0f, CurrentYaw, 0.0f));
 }
 
 void UOpenDoorComponent::HandleCloseDoor() const
@@ -32,7 +31,9 @@ void UOpenDoorComponent::BeginPlay()
 {
 	Super::BeginPlay();
 	InitialRotation = GetOwner()->GetActorRotation();
-	this->HandleOpenDoor();
+	StartingYaw = InitialRotation.Yaw;
+	CurrentYaw = StartingYaw;
+	TargetYaw = 90.0f;
 }
 
 
@@ -42,7 +43,7 @@ void UOpenDoorComponent::BeginPlay()
 void UOpenDoorComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
-	// ...
+	UE_LOG(LogTemp, Warning, TEXT("%f"), GetOwner()->GetActorRotation().Yaw);
+	HandleOpenDoor();
 }
 

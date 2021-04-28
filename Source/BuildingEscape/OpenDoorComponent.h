@@ -14,11 +14,14 @@ class BUILDINGESCAPE_API UOpenDoorComponent : public UActorComponent
 
 private:
 	FRotator InitialRotation;
+	float TargetYaw;
+	float StartingYaw;
+	float CurrentYaw;
 
 public:	
 	// Sets default values for this component's properties
 	UOpenDoorComponent();
-	void HandleOpenDoor() const;
+	void HandleOpenDoor();
 	void HandleCloseDoor() const;
 
 protected:
